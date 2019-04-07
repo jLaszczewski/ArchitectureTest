@@ -1,0 +1,30 @@
+warning_threshold: 10 # allow max 10 warnings, then show error
+
+excluded: # paths to ignore during linting.
+  - Pods
+  - Carthage
+  # - Fit\ Dostawcy/SwiftGen
+  # - Fit\ Dostawcy/Networking/GraphQL
+
+disabled_rules:
+  - line_length
+  - trailing_whitespace
+  - statement_position
+  - force_cast
+  - vertical_whitespace
+  - redundant_string_enum_value
+  - unused_closure_parameter
+  - nesting
+
+#rule parameters
+type_name:
+  max_length:
+    warning: 50
+    error: 60
+variable_name:
+  min_length:
+    warning: 1
+    error: 1
+  max_length:
+    warning: 50
+    error: 60

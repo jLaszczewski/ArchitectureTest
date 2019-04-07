@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+use_frameworks!
+
+def import_common_pods
+  
+  pod 'SwiftLint'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SwiftGen'
+  
+end
+
+target 'ArchitectureTest' do
+  import_common_pods
+end
